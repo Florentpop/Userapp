@@ -1,27 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .App {
-  text-align: center;
-  margin: 40px;
-  align-items: center;
+  margin-top: 50px;
 }
 
-.form-control {
-  margin: 10px;
-  display: flex;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  align-items: center;
-  justify-content: center;
+.logout {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 5px;
+  float: right;
+}
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+
+.form1 {
+  margin-left: 10rem;
+  float: left;
 }
 
 .App__user-info {
-  background-color: rgb(216, 214, 214);
-  min-height: 30vh;
-  width: 45vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 23px;
+  float: right;
+  margin-left: 20px;
+  margin-right: 10rem;
+  
+}
+
+.form-control > form {
+  margin-top: 15px;
+  background-color: #d6ddd7;
+  width: 270px;
+  height: 55vh;
+  margin-left: 0;
+  padding-left: 40px;
+  padding-top: 40px;
+  font-size: 15px;
+  border-radius: 2rem;
+}
+
+.form-control >form > label {
+  font-size: 18px;
+}
+
+.form-control >form > input {
+  width: 200px;
+  height: 30px;
+  margin: 15px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.users {
+  list-style-type: none;
   padding: 10px;
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+  width: 20rem;
+  background-color:rgba(178, 187, 189, 0.952);
   border-radius: 10px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.form-control >form > button {
+  width: 100px;
+  color: white;
+  margin-left: 85px;
+  margin-top: 40px;
+  height: 38px;
+  background-color: blue;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.form2 {
+  margin-top: 50px;
+  margin-left: 180px; 
+}
+
+.form3 {
+  margin-top: 10px;
+  margin-right: 40px;
+
 }

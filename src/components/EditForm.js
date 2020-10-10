@@ -8,7 +8,7 @@ export class EditForm extends Component {
         this.state = {
             name: props.user.name,
             email: props.user.email,
-            gen: props.user.gen,
+            gen: props.user.gen
         };
         this.id = props.match.params.id
     }
@@ -81,7 +81,9 @@ export class EditForm extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => ({
-    user: state.users.find(user => user.id === ownProps.match.params.id)
+    user: state.usersState.users.find(
+        (user) => user.id === ownProps.match.params.id
+    ),
 });
 
 const mapDispatchToProps = {

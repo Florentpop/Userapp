@@ -7,10 +7,19 @@ const UserInfo = ({name, email, gen, id, removeUser}) => {
       }
 
     return (
-        <div>
-            <h4>Name: {name}</h4>
-                <p>Email: {email}</p>
-                <p>Gen: {gen}</p>
+        <div className="users">
+
+            <h4>
+            Name: {name}
+            </h4>
+                <p>
+                Email: {email}
+                </p>
+
+                <p>
+                Gen: {gen}
+                </p>
+                
                 <button onClick={handleClick}>Remove user</button>
                 <Link to={`/edit/${id}`}>Edit user</Link>
                 <hr />
